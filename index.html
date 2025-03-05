@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firaol Gadissa | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Adjusted padding for better fit */
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #0ff;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+
+        .menu a:hover {
+            color: #0ff;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: calc(100vh - 80px);
+            padding: 50px;
+            position: relative;
+            z-index: 10;
+            margin-top: 80px; /* Adjust for fixed header */
+        }
+
+        .hero-content {
+            max-width: 50%;
+            padding-top: 50px; /* Adjust this value as needed */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0ff;
+        }
+
+        .highlight {
+            color: #ff0;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background: #0ff;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin: 5px; /* Added margin for spacing */
+        }
+
+        .button:hover {
+            background: #ff0;
+        }
+
+        .hero-img img {
+            max-width: 100%;
+            height: auto;
+            width: 350px;
+            animation: float 3s infinite ease-in-out alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                display: flex;
+                align-items: flex-start; /* Aligns items to the top */
+                justify-content: space-between;
+                height: calc(100vh - 80px);
+                padding: 50px;
+                position: relative;
+                z-index: 10;
+            }
+            .hero-content {
+                max-width: 100%; /* Adjust for mobile */
+                padding-top: 50px; /* Adjusted padding */
+            }
+            .hero-img img {
+                width: 250px;
+            }
+            header {
+                flex-direction: column; /* Stack elements vertically on mobile */
+                align-items: center;
+                padding: 10px; /* Adjust padding for mobile */
+                height: auto; /* Allow header to expand if needed */
+            }
+            .logo {
+                margin-bottom: 10px; /* Add space between logo and menu */
+            }
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px; /* Added padding for better spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video class="background-video" autoplay loop muted>
+        <source src="galaxy-background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <div class="logo"><i class="fas fa-rocket"></i></div> <!-- Rocket icon instead of text -->
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="#contact"></a>
+            <a href="#contact"></a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi There! I'm <span class="highlight">Firaol Gadissa</span></h1>
+            <h2>A <span class="highlight">Software Engineer</span> & <span class="highlight">Networking Enthusiast</span></h2>
+            <p>Passionate about developing AI-powered applications, networking, and cybersecurity.</p>
+            <!-- Two separate buttons -->
+            <a href="Firaol Gadissa CV.pdf" class="button" download="FiraolGadissaResume">Download Resume</a>
+            
+        </div>
+        <div class="hero-img">
+            <img src="avatar.png" alt="Animated Avatar">
+        </div>
+    </section>
+</body>
+</html>

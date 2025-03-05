@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Firaol Gadissa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+            padding-top: 80px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 80px;
+        }
+        .logo {
+            font-size: 2rem;
+            color: #0ff;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        .menu a:hover {
+            color: #0ff;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .skills-container {
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: rgba(19, 18, 18, 0.65);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+        }
+        .skill i {
+            font-size: 3rem;
+            color: #0ff;
+        }
+        .skill p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        .skill span {
+            display: block;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <video class="background" autoplay loop muted>
+        <source src="galaxy-background.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="logo"><i class="fas fa-rocket"></i></div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="#contact"></a>
+            <a href="#contact"></a>
+        </nav>
+    </header>
+    <section class="skills-container">
+        <h1>My Skills</h1>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill"><i class="fab fa-html5"></i><p>HTML</p><span>Expert in creating structured and semantic web pages.</span></div>
+            <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p><span>Skilled in styling websites for a responsive and modern look.</span></div>
+            <div class="skill"><i class="fab fa-js"></i><p>JavaScript</p><span>Experience in making web pages interactive and dynamic.</span></div>
+            <div class="skill"><i class="fab fa-php"></i><p>PHP</p><span>Backend development expertise for web applications.</span></div>
+            <div class="skill"><i class="fab fa-python"></i><p>Python</p><span>Proficient in automation, AI, and backend development.</span></div>
+            <div class="skill"><i class="fab fa-java"></i><p>Java</p><span>Object-oriented programming and application development.</span></div>
+            <div class="skill"><i class="fab fa-react"></i><p>React</p><span>Building fast and scalable web applications.</span></div>
+            <div class="skill"><i class="fab fa-node-js"></i><p>Node.js</p><span>Backend development for scalable web apps.</span></div>
+            <div class="skill"><i class="fas fa-database"></i><p>MySQL</p><span>Database management and optimization.</span></div>
+            <div class="skill"><i class="fas fa-network-wired"></i><p>Networking</p><span>Understanding of network protocols and security.</span></div>
+        </div>
+        <h2>Soft Skills</h2>
+        <div class="skills-grid">
+            <div class="skill"><i class="fas fa-users"></i><p>Teamwork</p><span>Collaborating effectively in diverse groups.</span></div>
+            <div class="skill"><i class="fas fa-lightbulb"></i><p>Problem-Solving</p><span>Critical thinking to overcome challenges.</span></div>
+            <div class="skill"><i class="fas fa-comments"></i><p>Communication</p><span>Strong verbal and written skills.</span></div>
+            <div class="skill"><i class="fas fa-user-cog"></i><p>Adaptability</p><span>Quick learning and handling new situations.</span></div>
+            <div class="skill"><i class="fas fa-handshake"></i><p>Leadership</p><span>Ability to guide teams towards goals.</span></div>
+        </div>
+    </section>
+</body>
+</html>
